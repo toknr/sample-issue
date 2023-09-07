@@ -1,4 +1,4 @@
-name: 🐞 Bug
+name: 🐞Bug
 description: バグを報告する
 title: "[BUG]:"
 labels: ["bug"]
