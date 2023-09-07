@@ -1,7 +1,7 @@
-name: 🐞 Bug
-description: バグを報告する
-title: "[BUG]:"
-labels: ["bug"]
+name: 🐞 Question
+description: 質問を投げる
+title: "[QUESTION]:"
+labels: ["question"]
 body:
   - type: checkboxes
     attributes:
@@ -18,12 +18,6 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: 期待される動作
-      description: 期待される動作の簡潔な説明
-    validations:
-      required: false
-  - type: textarea
-    attributes:
       label: 再現手順
       description: 問題を再現する手順
       placeholder: |
@@ -31,11 +25,5 @@ body:
         1. この設定で...
         1. '...' を実行します。
         1. エラーが表示されます...
-    validations:
-      required: false
-  - type: textarea
-    attributes:
-      label: その他
-      description: その他の情報があれば記載
     validations:
       required: false
