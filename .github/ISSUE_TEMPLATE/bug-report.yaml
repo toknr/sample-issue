@@ -1,0 +1,59 @@
+name: 🐞 Bug
+description: Issueを報告する
+title: "[BUG] <title>"
+labels: ["Bug"]
+body:
+  - type: checkboxes
+    attributes:
+      label: 既存のイシューはありますか？
+      description: バグに関する既存のイシューを検索してみてください。
+      options:
+        - label: 既存のイシューを検索しました
+          required: true
+  - type: textarea
+    attributes:
+      label: 現在の動作
+      description: あなたが経験している問題の簡潔な説明。
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: 期待される動作
+      description: 期待される動作の簡潔な説明。
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: 再現手順
+      description: 問題を再現する手順
+      placeholder: |
+        1. この環境で...
+        1. この設定で...
+        1. '...' を実行します。
+        1. エラーが表示されます...
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: 環境
+      description: |
+        例:
+          - **OS**: Ubuntu 20.04
+          - **Node**: 13.14.0
+          - **npm**: 7.6.3
+      value: |
+        - OS:
+        - Node:
+        - npm:
+      render: "Markdown"
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: その他の情報
+      description: |
+        リンクや参照など、問題に関する追加の文脈を提供するものは何でも！
+
+        ヒント: このエリアをクリックして強調表示し、ファイルをドラッグアンドドロップして画像やログファイルを添付できます。
+    validations:
+      required: false
